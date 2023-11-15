@@ -16,7 +16,7 @@ const Search = ({ onSearchChange }) => {
               options: response.data.map((city) => {
                 return {
                   value: `${city.latitude} ${city.langitude}`,
-                  label: `${city.name} ${city.countryCode}`,
+                  label: `${city.name}, ${city.countryCode}`,
                 };
               }),
             };
